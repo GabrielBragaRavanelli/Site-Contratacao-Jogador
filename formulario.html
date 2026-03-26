@@ -8,13 +8,22 @@
 </head>
 <body>
     <main class=" container-formulario">
-        <div class="titulo-formulario">
-            <h1>Formulário de Inscrição</h1>
-            <p>Preencha o formulário abaixo para se inscrever no Unimar FC</p>
-        </div>
+        <section class="painel-formulario">
+            <div class="titulo-formulario">
+                <span class="eyebrow">Unimar FC</span>
+                <h1>Formulário de Inscrição</h1>
+                <p>Preencha os dados abaixo para participar da seleção do time.</p>
+            </div>
 
-        <form class="formulario-grupo">
-                <div class="formulario-individual">
+            <form class="formulario-grupo">
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Informações Pessoais</h2>
+                        <p>Se apresente para a equipe com seus dados principais.</p>
+                    </div>
+
+                    <div class="grade-formulario grade-dupla">
+                        <div class="formulario-individual">
                     <label for="nome">Digite seu nome completo:</label>
                     <input type="text" id="nome" name="nome" placeholder="João Ricardo da Silva" required>
                 </div>
@@ -37,21 +46,26 @@
                 <div class="formulario-individual">
                     <label for="plataforma">Selecione sua plataforma:</label>
                     <select id="plataforma" name="plataforma" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="psn">PlayStation Network (PSN)</option>
                         <option value="xbox">Xbox Live</option>
                         <option value="pc">EA ID</option>
                     </select>
                 </div>
+                    </div>
+                </section>
 
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Perfil do Jogador</h2>
+                        <p>Mostre sua função dentro do jogo e o seu estilo.</p>
+                    </div>
 
-            <div class="titulo-formulario2">
-                <h1>Perfil do Jogador</h1>
-            </div>
-
-            <div class="formulario-grupo2">
-                <div class="formulario-individual">
+                    <div class="grade-formulario grade-dupla">
+                        <div class="formulario-individual">
                     <label for="posicao-principal">Selecione sua posição:</label>
                     <select id="posicao-principal" name="posicao-principal" required>
+                        <option value="" selected disabled>Escolha uma posição</option>
                         <option value="atacante">ATA</option>
                         <option value="ponta-direita">PD</option>
                         <option value="ponta-esquerda">PE</option>
@@ -70,6 +84,7 @@
                 <div class="formulario-individual">
                     <label for="posicao-secundaria">Selecione sua posição secundária:</label>
                     <select id="posicao-secundaria" name="posicao-secundaria" required>
+                        <option value="" selected disabled>Escolha uma posição</option>
                         <option value="atacante">ATA</option>
                         <option value="ponta-direita">PD</option>
                         <option value="ponta-esquerda">PE</option>
@@ -94,16 +109,20 @@
                     <label for="estilodejogo">Digite seu estilo de jogo:</label>
                     <input type="text" id="estilodejogo" name="estilodejogo" placeholder="ofensivo, defensivo" required>
                 </div>
-            </div>
+                    </div>
+                </section>
 
-            <div class="titulo-formulario3">
-                <h1>Experiência</h1>
-            </div>
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Experiência</h2>
+                        <p>Conte seu histórico competitivo e tempo de prática.</p>
+                    </div>
 
-            <div class="formulario-grupo3">
-                <div class="formulario-individual">
+                    <div class="grade-formulario grade-tripla">
+                        <div class="formulario-individual">
                     <label for="time-clube">Já jogou em algum time/clube?</label>
                     <select id="time-clube" name="time-clube" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="sim">Sim</option>
                         <option value="nao">Não</option>
                     </select>
@@ -117,20 +136,25 @@
                 <div class="formulario-individual">
                     <label for="campeonato">Já participou de Campeonato?</label>
                     <select id="campeonato" name="campeonato" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="sim">Sim</option>
                         <option value="nao">Não</option>
                     </select>
                 </div>
-            </div>
+                    </div>
+                </section>
 
-            <div class="titulo-formulario4">
-                <h1>Comunicação</h1>
-            </div>
-            
-            <div class="formulario-grupo4">
-                <div class="formulario-individual">
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Comunicação</h2>
+                        <p>Informe como você interage com o time durante as partidas.</p>
+                    </div>
+
+                    <div class="grade-formulario grade-tripla">
+                        <div class="formulario-individual">
                     <label for="discord">Possui discord?</label>
                     <select id="discord" name="discord" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="sim">Sim</option>
                         <option value="nao">Não</option>
                     </select>
@@ -144,20 +168,25 @@
                 <div class="formulario-individual">
                     <label for="microfone">Possui microfone?</label>
                     <select id="microfone" name="microfone" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="sim">Sim</option>
                         <option value="nao">Não</option>
                     </select>
                 </div>
-            </div>
+                    </div>
+                </section>
 
-            <div class="titulo-formulario5">
-                <h1>Comprometimento</h1>
-            </div>
+                <section class="bloco-formulario">
+                    <div class="cabecalho-bloco">
+                        <h2>Comprometimento</h2>
+                        <p>Queremos entender sua postura dentro de um elenco competitivo.</p>
+                    </div>
 
-            <div class="formulario-grupo5">
-                <div class="formulario-individual">
+                    <div class="grade-formulario grade-dupla">
+                        <div class="formulario-individual">
                     <label for="taticas">Você está disposto a jogar em equipe e seguir táticas?</label>
                     <select id="taticas" name="taticas" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="sim">Sim</option>
                         <option value="nao">Não</option>
                     </select>
@@ -166,23 +195,24 @@
                 <div class="formulario-individual">
                     <label for="criticas">Aceita críticas e busca melhorar?</label>
                     <select id="criticas" name="criticas" required>
+                        <option value="" selected disabled>Escolha uma opção</option>
                         <option value="sim">Sim</option>
                         <option value="nao">Não</option>
                     </select>
                 </div>
 
-                <div class="formulario-individual">
+                <div class="formulario-individual campo-amplo">
                     <label for="motivacao">Por que quer entrar no Unimar FC?</label>
                     <textarea id="motivacao" name="motivacao" placeholder="Escreva sua motivação para entrar no time..." required></textarea>
-                    
                 </div>
+                    </div>
 
                 <div class=" botao-formulario">
                     <button type="submit">Enviar</button>
                 </div>
             </div>
         </form>
-
+        </section>
     </main>
 
     
